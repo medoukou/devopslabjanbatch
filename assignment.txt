@@ -1,0 +1,7 @@
+assignment 1:
+clone a repo using SSH authenticator
+try git cheat sheet commands
+https://education.github.com/git-cheat-sheet-education.pdf
+find difference between git fetch and git pull command
+find usage of stage command
+explore git hub
