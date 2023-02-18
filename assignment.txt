@@ -5,3 +5,7 @@ https://education.github.com/git-cheat-sheet-education.pdf
 find difference between git fetch and git pull command
 find usage of stage command
 explore git hub
+
+assignment 2:
+find difference between jar,war,ear
+find difference between maven,gradle,ant
