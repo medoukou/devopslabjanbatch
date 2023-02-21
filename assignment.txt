@@ -9,3 +9,11 @@ explore git hub
 assignment 2:
 find difference between jar,war,ear
 find difference between maven,gradle,ant
+
+Assignment3:
+run ci pipeline for java application using maven
+try different phases of maven
+try to execute ci pipeline for dot net application, for sample code you can look on google.com
+try to copy files from 1 directory to another using jenkins
+create a node and attach it to jenkins server and run pipeline through it
+check which compiler/ build tools are used for different coding languages
