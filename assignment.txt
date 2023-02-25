@@ -17,3 +17,6 @@ try to execute ci pipeline for dot net application, for sample code you can look
 try to copy files from 1 directory to another using jenkins
 create a node and attach it to jenkins server and run pipeline through it
 check which compiler/ build tools are used for different coding languages
+
+Assignment4:
+write a terraform module structure to create vm,storage account, sqlserver, sql db
