@@ -20,3 +20,35 @@ check which compiler/ build tools are used for different coding languages
 
 Assignment4:
 write a terraform module structure to create vm,storage account, sqlserver, sql db
+
+Assignment5:
+write a terraform module/ file structure in through which you have to deploy 
+module/folder structure
+        -----vm
+         main file
+         variable file
+       ----sql server
+          main file
+          variable file
+       ---- sql db
+         main file
+         variable file
+       -----storage account
+         main file
+         variable file
+       -- ap service plan
+          main file
+          variable 
+       ---- app services
+           main file
+           variable
+
+main.tf this file will be calling the modules
+variables.tf
+tfvar file
+provider.tf ------ you have to store the state file in blob storage
+
+Assignment6
+create a ansible play book
+install nginx services on vm machine and copy the local code to deploy on that nginx
+so that when you hit the url/ip address of vm machine your code output should be there
