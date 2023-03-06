@@ -1,0 +1,9 @@
+---
+- hosts: host1
+  become: true
+  name: Play 1
+  tasks:
+     - name: Execute command ‘Date’
+       command: date
+     - name: Install nginx
+       apt: name=nginx state=latest
