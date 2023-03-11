@@ -129,3 +129,42 @@ resource "azurerm_linux_virtual_machine" "myterraformvm" {
     storage_account_uri = azurerm_storage_account.mystorageaccount.primary_blob_endpoint
   }
 }
+
+#Create sql server
+
+resource "azurerm_storage_account" "example" {
+  name                     = "medoukousa"
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+}
+
+resource "azurerm_sql_server" "example" {
+  name                         = "medoukoumssqlserver"
+  resource_group_name          = azurerm_resource_group.rg.name
+  location                     = azurerm_resource_group.rg.location
+  version                      = "12.0"
+  administrator_login          = "mradministrator"
+  administrator_login_password = "thisIsDog11"
+
+  tags = {
+    environment = "test"
+  }
+}
+
+resource "azurerm_mssql_database" "test" {
+  depends_on = [
+   resource.azurerm_sql_server.example
+  ]
+  name           = "medoukoudb"
+  server_id      = azurerm_sql_server.example.id
+  collation      = "SQL_Latin1_General_CP1_CI_AS"
+  license_type   = "LicenseIncluded"
+  sku_name       = "S0"
+
+  tags = {
+    foo = "bar"
+  }
+  
+}
