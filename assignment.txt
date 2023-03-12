@@ -73,3 +73,5 @@ docker compose:
 
 explore docker networking
 check in which sceneraios you should use docker compose and docker file
+
+find difference between dockar swarm and kubernets
