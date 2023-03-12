@@ -52,3 +52,24 @@ Assignment6
 create a ansible play book
 install nginx services on vm machine and copy the local code to deploy on that nginx
 so that when you hit the url/ip address of vm machine your code output should be there
+
+
+
+Assignment7
+create a docker file for below
+1- take ubuntu image
+2- install nginx
+3- deploy dot net application
+4- try cmd and entry point and find difference between them
+
+
+Assignment:8
+docker compose:
+1- in which create bind mount and attach it to ubuntu directory
+2. install appache on ubuntu container
+3. create files in the container
+4. delete the container and re run the container and check if nginx and other files which were created still exists
+
+
+explore docker networking
+check in which sceneraios you should use docker compose and docker file
