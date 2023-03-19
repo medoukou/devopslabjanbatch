@@ -1,0 +1,28 @@
+version=$(az aks get-versions -l eastus --query 'orchestrators[-1].orchestratorVersion' -o tsv)
+
+ az group create --name akshandsonlab --location eastus (rg)
+
+az aks create --resource-group akshandsonlab --name jatinbhalla1991 --enable-addons monitoring --kubernetes-version 1.26.0 (rg,aks)
+
+az acr create --resource-group akshandsonlab --name jatinbhalla1991 --sku Standard --location eastus (rg,acr)
+
+az aks update -n jatinbhalla1991 -g akshandsonlab --attach-acr jatinbhalla1991 (name of aks,rg,acr)
+
+az sql server create -l eastus -g akshandsonlab -n jatinbhalla1991 -u sqladmin -p P2ssw0rd1234 (rg and sql server name)
+
+az sql db create -g akshandsonlab -s jatinbhalla1991 -n mhcdb --service-objective S0 (rg and sql server name)
+
+commands to execute
+
+docker-compose -f docker-compose.ci.build.yml up
+docker-compose -f docker-compose.yml build
+docker login -u jatinbhalla -p CNq1Zu/gZ1vH5sypKjT0Zl2fh/cqsDPW1LXt4U12Jq+ACRBMT8J8 jatinbhalla1991.azurecr.io   (username,token and acr name)
+docker-compose -f docker-compose.yml push
+
+az account set --subscription 9112ff5f-1a9e-411d-b35f-4ec8bd46878a   (modify)
+az aks get-credentials --resource-group akshandsonlab --name jatinbhalla1991 (modify with your aks and resource group)
+kubectl apply -f mhc-aks.yaml
+
+kubectl get po
+kubectl get service mhc-front --watch
+
