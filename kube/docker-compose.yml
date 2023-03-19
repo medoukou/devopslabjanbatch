@@ -2,7 +2,7 @@ version: '2'
 
 services:
   myhealth.web:
-    image:  acrnew1234.azurecr.io/myhealth.web
+    image:  jatinbhalla1991.azurecr.io/myhealth.web
     build:
       context: ./src/MyHealth.Web
       dockerfile: Dockerfile
