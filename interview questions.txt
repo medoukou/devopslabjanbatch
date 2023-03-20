@@ -1,0 +1,67 @@
+Interview questions
+git
+1.types of version controlling
+2.difference between git clone and git fork
+3.what is cherry pick command do
+4.how to resolve merge conflict
+5. what is branching strategy you follow in your company
+6. what branching policies you have applied in your company
+
+terraform
+1. which all are blocks available in terraform
+2. where do you store your state file
+3 how you push your state file in azure blob
+4. if resources are created and i re run the template then what will happen to existing resources
+5. suppose you have create a resource from terraform and then you have applied few changes from portal and i resun the template then what will happen to changes i have made from portal manually
+6. if i delete state file what will happen
+7. how to import changes in state file
+8. how can i deploy through ci/cd
+
+
+ansible
+1. what is ansible galaxy
+2. ansible role file structure
+3. what is handlers
+4. what is notify
+5. what is modules
+6. how will you configure relation between master and node
+
+jenkins
+1. ci/cd pipeline explaination
+2. syntax for cron job
+3. where do you store your secrets
+4. how you configure relation between master and node
+5. what is ocean blue
+6. how will you trigger repo if changes are made
+7. differnce in items/projects available in jenkins
+8. how will you take backup of jenkins plugins
+9. how will you migrate jenkins pipelines
+
+docker
+1. how to write docker file
+2. differnce in docker cmd and entrypoint
+3. difference in docker file and docker compose
+4. how will you login to docker container
+5. what is docker network
+6. what is persistent volumes
+7. how will you check container ip
+8. from where images get pulled by default
+9. how will you push images to your repo
+
+
+kubernets
+1. how to delete application
+2. what are kubernets services
+3. what is ingress
+4. how will you check logs in kubernets
+5. what is kube config file
+6. where have you configured kubernets
+7. how you configured on premises
+8. how will you take care of traffic and avilability
+
+
+
+
+
+ 
+ 
